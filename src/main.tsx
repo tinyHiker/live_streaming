@@ -7,6 +7,7 @@ import {
   RouterProvider
 } from "react-router-dom"
 import Home from './pages/Home.tsx'
+import Room from './components/Room.tsx'
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />
+      },
+      {
+        path: "/live-streaming",
+        element: <Room />
       }
     ]
   },
